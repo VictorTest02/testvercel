@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const response = await fetch(`https://jsonplaceholder.typicode.com/users?username=${login}`);
+    const response = await fetch(`https://jsonplaceholder.typicode.com/users/1`);
     const data = await response.json();
 
     if (data.length === 0) {
